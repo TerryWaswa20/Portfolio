@@ -1,0 +1,30 @@
+/* Portfolio.css */
+
+.portfolio {
+    padding: 20px;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between the items */
+  }
+  
+  .project-item {
+    flex: 1 1 calc(33.33% - 20px); /* Makes each item take up 33.33% of the width (3 items per row) */
+    box-sizing: border-box; /* Ensures padding and margins are included in the width */
+    margin-bottom: 20px; /* Adds some space between rows */
+  }
+  
+  @media (max-width: 1024px) {
+    .project-item {
+      flex: 1 1 calc(50% - 20px); /* Stacks 2 items per row for medium-sized screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project-item {
+      flex: 1 1 100%; /* Stacks items vertically (1 per row) on small screens */
+    }
+  }
+  
