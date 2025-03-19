@@ -41,20 +41,6 @@ const Contact = () => {
     <div className="contact-container">
       <h2>Contact Me</h2>
 
-      {/* Social Media Links - You can place them here above the form */}
-      <div className="social-media-links">
-        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-twitter"></i>
-        </a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-github"></i>
-        </a>
-        {/* Add more social media links as needed */}
-      </div>
-
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="form-group">
           <label htmlFor="name">Name:</label>

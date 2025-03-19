@@ -7,7 +7,7 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          Welcome To my Portfolio
+        My Portfolio
         </Link>
         <ul className="navbar-links">
           <li className="navbar-item">
