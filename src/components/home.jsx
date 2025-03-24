@@ -53,7 +53,7 @@ const Home = () => {
             </p>
             <div className="home-buttons">
               <Link to="/Portfolio" className="home-button">
-                View My Projects
+                My Projects
               </Link>
               <Link to="/contact" className="home-button">
                 Contact Me

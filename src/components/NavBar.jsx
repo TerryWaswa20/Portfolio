@@ -13,8 +13,7 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          {/* Add your logo */}
-          <img src="/path-to-your-logo-image/logo.png" alt="Logo" className="logo-image" />
+          My Portfolio
         </Link>
 
         {/* Hamburger icon for mobile */}

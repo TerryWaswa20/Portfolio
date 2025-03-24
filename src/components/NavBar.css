@@ -1,12 +1,5 @@
 /* NavBar.css */
 
-/* Style for the logo image */
-.navbar-logo img {
-  max-height: 40px;
-  width: auto;
-  display: block;
-}
-
 /* Navbar container styling */
 .navbar-container {
   display: flex;
@@ -25,6 +18,11 @@
 /* Navbar item styling */
 .navbar-item {
   padding: 5px;
+
+}
+
+.navbar-logo {
+  font-weight: bold;
 }
 
 /* Navbar link styling */
@@ -32,9 +30,12 @@
   text-decoration: none;
   color: #333;
   font-size: 16px;
+  font-weight: bold;
 }
 
-/* Hamburger icon styling (visible only on mobile) */
+.navbar-link:hover {
+  color: #007BFF; 
+}
 .navbar-toggle {
   display: none;
   flex-direction: column;
@@ -48,9 +49,7 @@
   margin: 4px 0;
 }
 
-/* Media query for mobile responsiveness */
 @media (max-width: 768px) {
-  /* Hide the navbar links by default on mobile */
   .navbar-links {
     display: none;
     flex-direction: column;
@@ -63,12 +62,11 @@
     box-shadow: 0px 4px 2px -2px gray;
   }
 
-  /* Show the navbar links when 'active' class is added */
   .navbar-links.active {
     display: flex;
+    color: #007BFF;
   }
 
-  /* Show the hamburger icon on mobile */
   .navbar-toggle {
     display: flex;
   }
