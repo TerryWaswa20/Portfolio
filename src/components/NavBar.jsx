@@ -1,15 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import './NavBar.css'; // You can style this with your custom CSS.
+import './NavBar.css'; 
 
 const NavBar = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMobile(!isMobile);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-        My Portfolio
+          {/* Add your logo */}
+          <img src="/path-to-your-logo-image/logo.png" alt="Logo" className="logo-image" />
         </Link>
-        <ul className="navbar-links">
+
+        {/* Hamburger icon for mobile */}
+        <div className="navbar-toggle" onClick={toggleMenu}>
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
+
+        {/* Navigation links */}
+        <ul className={`navbar-links ${isMobile ? "active" : ""}`}>
           <li className="navbar-item">
             <Link to="/" className="navbar-link">
               Home

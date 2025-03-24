@@ -1,31 +1,31 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./Home.css"; // Import custom CSS for styling (optional)
+import "./Home.css"; 
 
 const skills = [
   "Frontend Web Developer",
   "Backend Developer",
   "UI/UX Enthusiast",
-  "Marketing Specialist",  // Updated this line
-  // Add more skills if needed
+  "Marketing Specialist",  
+  
 ];
 
 const Home = () => {
-  const [currentSkill, setCurrentSkill] = useState(skills[0]);  // Initial skill to display
-  const [index, setIndex] = useState(0); // Index to track the current skill
+  const [currentSkill, setCurrentSkill] = useState(skills[0]);  
+  const [index, setIndex] = useState(0); 
 
   useEffect(() => {
     const skillChangeInterval = setInterval(() => {
       setIndex((prevIndex) => {
-        const nextIndex = (prevIndex + 1) % skills.length; // Loop through skills
-        setCurrentSkill(skills[nextIndex]);  // Update the current skill to display
+        const nextIndex = (prevIndex + 1) % skills.length;
+        setCurrentSkill(skills[nextIndex]);  
         return nextIndex;
       });
-    }, 3000); // Change skill every 3 seconds
+    }, 3000); 
 
-    // Cleanup the interval on component unmount
+    
     return () => clearInterval(skillChangeInterval);
-  }, []); // Empty dependency array ensures it runs only once after mount
+  }, []); 
 
   return (
     <section className="home">
@@ -34,7 +34,7 @@ const Home = () => {
           {/* Profile Picture */}
           <div className="home-profile-pic">
             <img
-              src="/Images/image8.jpg" // Make sure to replace with the correct path
+              src="/Images/image8.jpg" 
               alt="Profile Picture"
               className="profile-img"
             />
