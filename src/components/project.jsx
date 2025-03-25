@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Project.css"; // Make sure to create your own CSS for styling
+import "./Project.css"; 
 
 const Project = ({ title, description, image, link }) => {
   const [isHovered, setIsHovered] = useState(false);

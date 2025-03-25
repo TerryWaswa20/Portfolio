@@ -11,7 +11,7 @@ import Footer from './components/Footer'; // Import Footer component
 function App() {
   return (
     <Router>
-      <Navbar /> {/* Your Navbar goes here */}
+      <Navbar /> 
       <Routes>
         {/* Define the routes */}
         <Route path="/" element={<Home />} /> {/* Home page */}
@@ -20,7 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />} /> {/* Contact page */}
         <Route path="/portfolio" element={<Portfolio />} /> {/* Portfolio page */}
       </Routes>
-      <Footer /> {/* Footer goes here, outside of Routes so it appears on all pages */}
+      <Footer /> 
     </Router>
   );
 }

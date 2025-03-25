@@ -1,31 +1,31 @@
-/* Contact container - Centering the form and other content */
+
 .contact-container {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Center the content horizontally */
-    justify-content: center;  /* Center the content vertically */
-    min-height: 100vh;  /* Full height of the viewport */
+    align-items: center;  
+    justify-content: center; 
+    min-height: 100vh;  
     padding: 20px;
     background-color: #f4f4f4;
     font-family: Arial, sans-serif;
   }
   
-  /* Social media links container (Above or Below the form) */
+  /* Social media links container */
   .social-media-links, .social-media-links-bottom {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-bottom: 20px;
-    font-size: 30px; /* Icon size */
+    font-size: 30px; 
   }
   
   .social-media-links a, .social-media-links-bottom a {
-    color: #333;  /* Default icon color */
+    color: #333;  
     text-decoration: none;
   }
   
   .social-media-links a:hover, .social-media-links-bottom a:hover {
-    color: #007bff;  /* Change color on hover */
+    color: #007bff; 
   }
   
   /* Form Styling */
@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 500px;  /* Maximum width of the form */
+    max-width: 500px;  
     padding: 20px;
     background-color: white;
     border-radius: 8px;
@@ -60,7 +60,7 @@
   
   textarea {
     resize: vertical;
-    min-height: 120px;  /* Set minimum height for the textarea */
+    min-height: 120px;  
   }
   
   .submit-btn {
